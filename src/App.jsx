@@ -3,10 +3,19 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import TodoItem from './assets/TodoItem'
+import Form from './Form'
 
 function App() {
   const [todos, setTodos] = useState([]);
-  setTodos([]);
+  
+  function addTodo(text) {
+    console.log("add todo", text);
+    createTodo(text);
+  }
+
+  function createTodo(text) {
+
+  }
 
   return (
     <>
@@ -19,6 +28,7 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
+      <Form submitHandler={addTodo} />
       <TodoItem text="Hello World!" id="hakka2211"/>
     </>
   )

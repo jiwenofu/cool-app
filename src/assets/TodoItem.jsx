@@ -1,7 +1,7 @@
 import './TodoItem.css';
 function TodoItem({text, id}) {
     return (
-        <article classname='todo-item'>
+        <article className='todo-item'>
             {text} {id}
         </article>
     )
